@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My Website</title>
+    <link href="styles.css" rel="stylesheet">
+    <style>
+        #displayName{
+            border: 1px solid black;
+        }
+    </style>
+    <script srrc="function.js" defer></script>
+</head>
+<body>
+    
+    <h1>Welcome to JavaScript </h1>
+    <button onclick="showMyName();">Click me</button>
+    <p id="displayName">Box</p>    
+    <p id="nextChoice"></p>    
+
+    <script>
+        function showMyName() {
+            document.getElementById('displayName').innerText = 'Inside';
+            document.getElementById('nextChoice').innerText = 'the box';
+            document.getElementById('displayName').style.color = 'red';
+            document.getElementById('displayName').style.backgroundColor = 'yellow';
+            document.getElementById('displayName').style.border = '1px solid black';
+            document.getElementById('displayName').style.display = 'inline-block';
+        } 
+    </script>
+
+
+    <!--Event driven programming
+    1) whats the event? == click
+    2) on what element thhe event happens? == button
+    3) what action should be taken? == display name
+    -->
+</body>
+</html>
