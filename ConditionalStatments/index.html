@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive JavaScript Example</title>
+    
+    <script src="javascript.js" defer></script>
+</head>
+<body>
+    <h1>Programing practices</h1>
+    <label>Enter a number</label><input id="input1" type="number"><br/>
+    <button onclick="checkSign()">Show Sign</button><br>
+
+    <label>Enter a month number</label><input id="monthNumber" type="number" onkeyup="showMonthName()"><br/>
+    <button onkeypress="showMonthName()">Show Month</button>
+
+    <p id="output"></p> 
+    <p id="monthName"></p> 
+
+</body>
+</html>

@@ -4,7 +4,7 @@ let elm2 = document.getElementById("input2");
 
 function add(){
     //variables
-    "us strict";
+    "use strict";
     let result = document.getElementById("output");
 
     result.innerText = +elm1.value + +elm2.value;
