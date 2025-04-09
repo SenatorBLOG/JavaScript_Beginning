@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive JavaScript Example</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="js/javascript.js" defer></script>
+</head>
+<body>
+    <h1>JS Grocery Shop</h1>
+
+    <label> Apple </label><input id="AppleWeight" type="number" value="3.5">Kg @ $
+    <input id="ApplePrice" type="number" value="2.3">
+    <span id="errorApple" class="error"></span><br/>
+    <label> Orange </label><input id="OrangeWeight" type="number" value="5">Kg @ $
+    <input id="OrangePrice" type="number" value="3.0">
+    <span id="errorOrange" class="error"></span><br/>
+    <label> Grape </label><input id="GrapeWeight" type="number" value="2.0">Kg @ $ 
+    <input id="GrapePrice" type="number" value="1.5">
+    <span id="errorGrape" class="error"></span><br/>
+    <label> Apple </label>
+    <select id="discount">
+        <option value="0">None</option>
+        <option value="0.05">5%</option>
+        <option value="0.1">10%</option>
+        <option value="0.15">15%</option>
+        <option value="0.2">20%</option>
+    </select><br/>
+
+    <button onclick="calculate()">Calculate</button><br>
+    <button onclick="resetWeights()">Reset Weights</button>
+    <button onclick="resetPrice()">Reset Price</button>
+    <button onclick="resetAll()">Reset All</button><br>
+
+    <span id="output1">Total Price: </span><span id="totalPrice"></span><br>
+    <span id="output2">Total Weight: </span><span id="totalWeight"></span>
+
+</body>
+</html>
