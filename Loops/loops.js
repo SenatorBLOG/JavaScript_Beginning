@@ -5,6 +5,7 @@ function findMax(){
     let number3 = document.getElementById('num3').value;
     let number4 = document.getElementById('num4').value;
     let max;
+    
     max = maxValue(number1,number2,number3,number4);
         
     document.getElementById('output3').innerHTML = max;
