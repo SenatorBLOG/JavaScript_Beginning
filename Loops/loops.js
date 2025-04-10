@@ -1,4 +1,28 @@
 // JAVAScript sourse code
+function findMax(){
+    let number1 = document.getElementById('num1').value;
+    let number2 = document.getElementById('num2').value;
+    let number3 = document.getElementById('num3').value;
+    let number4 = document.getElementById('num4').value;
+    let max;
+    max = maxValue(number1,number2,number3,number4);
+        
+    document.getElementById('output3').innerHTML = max;
+}
+function maxValue(n1,n2,n3,n4){
+    let max = n1;
+    if(n2>max){
+        max = n2;
+    } 
+    if(n3>max){
+        max = n3;
+    } 
+    if(n4>max){
+        max = n4;
+    } 
+    return max;
+}
+
 function showText(){
     let inputElement = document.getElementById('userInput');
     let outputElement = document.getElementById('output');
