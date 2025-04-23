@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Task Time Analyzer</title>
+    <link rel="stylesheet" href="css/styles.css"/>
+    <script src="analyzer.js" defer></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Task Analyzer</h1>
+
+        <label for="taskName">Task Name</label>
+        <input id="taskName" type="text" placeholder="Enter a task"/><br/>
+
+        <label for="taskHours">Task Hours</label>
+        <input id="taskHours" type="number" placeholder="e.g. 8"/><br/>
+
+        <label for="payHours">Cost per Hour</label>
+        <input id="payHours" type="number" placeholder="min 17.40"/><br/>
+
+        <label for="bonusRate">Bonus Rate</label>
+        <select id="bonusRate">
+            <option value="0">0%</option>
+            <option value="0.10">10%</option>
+            <option value="0.20">20%</option>
+            <option value="0.30">30%</option>
+            <option value="0.40">40%</option>
+            <option value="0.50">50%</option>
+        </select><br/>
+
+        <label for="totalDays">Days Spent</label>
+        <input id="totalDays" type="number" placeholder="e.g. 5"/><br/>
+
+        <button onclick="addTask()">Add New Task</button>
+        <button onclick="calcSal()">Calculate Salary</button>
+
+        <div id="output">
+            <ul id="taskList"></ul>
+        </div>
+        
+        <div id="income">
+            <ul id="incomeList"></ul>
+        </div>
+        
+    </div>
+</body>
+</html>

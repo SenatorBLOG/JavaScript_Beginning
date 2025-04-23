@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task Manager JavaScript</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="task.js" defer></script>
+</head>
+<body>
+    <div>
+        <h1>Task Manager</h1>
+        <label for="taskInput">Task Name</label>
+        <input id="taskInput" type="text" value="Enter a task"></br>
+        <label for="taskPriority">Task Priority</label>
+        <select id="taskPriority">
+            <option value="low">Low</option>
+            <option value="medium">Medium</option>
+            <option value="high">High</option>
+        </select></br>
+        <label for="timeInput">Time spent</label>
+        <input id="timeInput" type="number" min="0" max="24"></br>
+        <button onclick="addTask()">Add Task</button>
+        <section>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Task Name</th>
+                        <th>Priority</th>
+                        <th>Time Spent</th>
+                        <th><button>Delete</button></th>
+                    </tr>
+                </thead>
+                <tbody id="taskTableBody"></tbody>
+            </table>
+        </section>
+    </div>
+</body>
+</html>

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Construction Calculator</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="js/calculator.js" defer></script>
+</head>
+<body>
+    <div id="calculator">
+        <h1>Construction Calculator</h1>
+        <div id="dencity">
+            <table>
+                <tr>
+                    <th>Material</th>
+                    <th>Density (g/cm³)</th>
+                </tr>
+                <tr>
+                    <td>Wood</td>
+                    <td>0.6</td>
+                </tr>
+                <tr>
+                    <td>Metal</td>
+                    <td>7.8</td>
+                </tr>
+                <tr>
+                    <td>Plastic</td>
+                    <td>0.9</td>
+                </tr>
+            </table>
+        </div>
+        <div id="materialCost">
+            <table>
+                <tr>
+                    <th>Material</th>
+                    <th>Cost per kg</th>
+                </tr>
+                <tr>
+                    <td>Wood</td>
+                    <td>$5.00</td>
+                </tr>
+                <tr>
+                    <td>Metal</td>
+                    <td>$10.00</td>
+                </tr>
+                <tr>
+                    <td>Plastic</td>
+                    <td>$2.00</td>
+                </tr>
+            </table>
+        </div>
+        <div id="container">
+            <h1>Calculator</h1>
+            <label for="height">Height (in cm):</label>
+            <input type="number" id="height" value="1" placeholder="Enter height in cm"><br>
+            
+            <label for="length">Length (in cm):</label>
+            <input type="number" id="length" value="1" placeholder="Enter length in cm"><br>
+
+            <label for="width">Width (in cm):</label>
+            <input type="number" id="width" value="1" placeholder="Enter width in cm"><br>
+
+            <select id="material">
+                <option value="1">Wood</option>
+                <option value="2">Metal</option>
+                <option value="3">Plastic</option>
+            </select><br>
+            <button onclick="addMaterial()">Calculate</button>
+
+        </div>
+            <ul id="resultHtml"></ul>
+        </div>
+    </div>
+</body>
+</html>
