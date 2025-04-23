@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grade calculator</title>
+    <meta name="description" content="Brief description of the page content">
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="calculator.js" defer></script>
+</head>
+<body>
+   <div id="container">
+        <h1>The Grade Calculator</h1>
+        <div id="calculator">
+            <p>In this calculator you can estimate you final grade for the class.</p>
+            <p>Press <q>Add Subject</q> to add new subject: 
+                <button onclick="addSubject()">Add Subject</button>
+            </p>
+        </div>
+        <div >  
+            <span id="result"></span>
+            <ul id="subjectList"></ul>
+            <div id="calculateButton"></div>
+            <ul id="calculatedList"></ul>
+        </div>
+   </div>
+</body>
+</html>

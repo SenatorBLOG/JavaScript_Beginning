@@ -12,7 +12,7 @@ function addMaterial(){
     let material = parseInt(materialHtml.value);
 
     if (material ==1){
-        material = "Wood";
+        materialStr = "Wood";
     }else if(material == 2){
         material = "Metal";
     }else if(material ==3){
@@ -32,8 +32,6 @@ function addMaterial(){
         return;
     }
     
-    
-
     if(!document.getElementById('resultHeader')){
         const result = document.createElement('li');
         result.className = "resultClass";
